@@ -6,7 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "preinstall": "npx npm-force-resolutions",
+    "prebuild": "npm install --force"
+  },
+  "resolutions": {
+    "@parcel/watcher": "^2.0.0"
   },
   "dependencies": {
     "@aws-amplify/ui-react": "^6.1.13",
